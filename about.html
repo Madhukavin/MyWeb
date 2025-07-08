@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>About Us</title>
     <link rel="icon" href="Card.png">
@@ -7,14 +8,46 @@
         body {
             background-color: thistle;
             text-align: center;
+            margin: 0;
         }
+
         h1 a {
             text-decoration: none;
             color: darkmagenta;
         }
+
         h2 {
             color: darkred;
         }
+
+        nav {
+            font-size: larger;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 0 18px;
+            padding: 8px 14px;
+            font-weight: 600;
+            color: darkmagenta;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.25s, color 0.25s;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background: darkmagenta;
+            color: #fff;
+        }
+
+        nav a.active {
+            background: darkmagenta;
+            color: #fff;
+            pointer-events: none;
+            /* prevents clicking again */
+        }
+
         div {
             width: 60%;
             margin: 20px auto;
@@ -25,30 +58,47 @@
         }
     </style>
 </head>
-<body>
-    <h1>MANICKARAJ SILKS</h1>
-    <hr>
 
+<body>
+    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">MANICKARAJ SILKS</h1>
+    <hr>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <hr>
+    <p style="font-size: larger;"><b>Our Exclusive website for your Saree needs.</b></p>
+    <hr>
+    <q style="color:rgb(103, 9, 108);">OUR GOAL IS TO PROVIDE A WIDE RANGE OF EXQUISITE COLLECTION OF SILK SAREES</q>
+    <hr>
     <h2>About Us</h2>
-    <h3><div><pre style="font-size: larger;">
+    <h3>
+        <div>
+            <pre style="font-size: larger;">
         At <b>MANICKARAJ SILKS</b>, we specialize in offering beautiful, high-quality silk sarees. 
         With years of tradition and a commitment to quality, 
         our mission is to celebrate the elegance of Indian culture.
-    </pre></div>
+    </pre>
+        </div>
     </h3>
     <h2>📞 Contact Us</h2>
-    <h4><div><address style="font-size: larger;">
-            P. Manickaraj Silks <br>
-            5/102-1, SK Garden, Sirumugai <br>
-            Mettupalayam(tk), Coimbatore(Dt) <br>
-            PIN - 641302 <br>
-            Contact : 9894076637
-        </address></div>
-    </h4>    
+    <h4>
+        <div>
+            <address style="font-size: larger;">
+                P. Manickaraj Silks <br>
+                5/102-1, SK Garden, Sirumugai <br>
+                Mettupalayam(tk), Coimbatore(Dt) <br>
+                PIN - 641302 <br>
+                Contact : 9894076637
+            </address>
+        </div>
+    </h4>
 
     <footer>
-        <p>&copy; 2025 MANICKARAJ SILKS. All rights reserved.</p>
+        <p>&copy; 2025 MANICKARAJ SILKS. <br><br>All rights reserved.</p>
     </footer>
 
 </body>
+
 </html>

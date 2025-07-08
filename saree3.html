@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Soft Silk Saree - MANICKARAJ SILKS</title>
     <link rel="icon" href="Saree3.jpg">
     <style>
         body {
             background-color: thistle;
-            font-family: cursive;
             text-align: center;
             color: black;
+            margin: 0;
         }
+
         img {
             border: 3px solid darkmagenta;
             border-radius: 10px;
             margin-top: 20px;
         }
+
         div {
             width: 60%;
             margin: 20px auto;
@@ -23,6 +26,35 @@
             border-radius: 10px;
             border: 1px solid purple;
         }
+
+        nav {
+            font-size: larger;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 0 18px;
+            padding: 8px 14px;
+            font-weight: 600;
+            color: darkmagenta;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.25s, color 0.25s;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background: darkmagenta;
+            color: #fff;
+        }
+
+        nav a.active {
+            background: darkmagenta;
+            color: #fff;
+            pointer-events: none;
+            /* prevents clicking again */
+        }
+
         a {
             color: black;
             text-decoration: none;
@@ -30,9 +62,17 @@
         }
     </style>
 </head>
+
 <body>
 
-    <h1>MANICKARAJ SILKS</h1>
+    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">MANICKARAJ SILKS</h1>
+    <hr>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <hr>
     <h2>Featured Saree</h2>
 
     <img src="Saree3.jpg" alt="Soft Silk Saree" width="800" height="600">
@@ -40,8 +80,9 @@
     <div>
         <h3>Soft Silk Saree - Royal Pink</h3>
         <p>
-            This royal pink soft silk saree is a perfect blend of elegance and tradition. 
-            Woven with golden zari borders and a smooth finish, it's ideal for weddings, festivals, and special occasions.
+            This royal pink soft silk saree is a perfect blend of elegance and tradition.
+            Woven with golden zari borders and a smooth finish, it's ideal for weddings, festivals, and special
+            occasions.
         </p>
         <p>
             <b>Price:</b> ₹5,999<br>
@@ -50,7 +91,6 @@
         </p>
     </div>
 
-    <p><a href="index.html">← Back to Home</a></p>
-
 </body>
+
 </html>
